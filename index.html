@@ -97,13 +97,15 @@
     </section>
 
     <main class="encrypt container df-pdd">
-      <form action="" class="form">
+      <form action="submit" class="form">
         <textarea
           id="encrypt-input-area"
           placeholder="Apenas letras minúsculas e sem acento..."
           maxlength="500"
+          required
+          name="encrypt"
         ></textarea>
-        <button class="btn-cript-input">Criptografar</button>
+        <button type="submit" class="btn-cript-input">Criptografar</button>
       </form>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +123,8 @@
       </svg>
       <form action="" class="form">
         <textarea id="encrypt-output-area" maxlength="500"></textarea>
-        <button class="btn-cript-output">Descriptografar</button>
+        <img id="textarea-img" src="./img/textarea-design-vector.svg" alt="" />
+        <button type="submit" class="btn-cript-output">Descriptografar</button>
       </form>
     </main>
 
@@ -141,5 +144,6 @@
         ></a>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

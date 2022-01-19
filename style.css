@@ -137,15 +137,23 @@ body {
   height: 582px;
   padding: 2rem;
   padding-bottom: 7rem;
-  background-image: url(./img/textarea-design-vector.svg);
   background-size: 65%;
   background-repeat: no-repeat;
   background-position: center;
   resize: none;
   outline: none;
+  position: relative;
 }
-#encrypt-output-area:focus {
-  background-image: unset;
+#textarea-img {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  transform: translate(-15%);
+  width: 75%;
+}
+.img-disable {
+  transition: ease-out 0.5s;
+  opacity: 0;
 }
 .form {
   position: relative;
