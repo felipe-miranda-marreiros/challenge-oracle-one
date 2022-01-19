@@ -31,6 +31,7 @@ btnEncrypt[1].addEventListener("click", (event) => {
   } else {
     textToEncrypt[0].value = secondInput;
     textToEncrypt[1].value = " ";
+    textAreaImg.classList.remove("img-disable");
     arrowIconLeft.style.stroke = "#34C06B";
     arrowIconLeft.style.transition = "all 0.5s";
     arrowIconLeft.style.opacity = "1";
@@ -50,11 +51,10 @@ textToEncrypt[1].addEventListener("input", () => {
 });
 
 textToEncrypt[0].addEventListener("input", () => {
-  if (textToEncrypt[0].value === "" || textToEncrypt[0] === true) {
+  if (textToEncrypt[0].value === '' || textToEncrypt[0] === true) {
+    textToEncrypt[0].value = '';
     textAreaImg.classList.remove("img-disable");
     arrowIconRight.style.opacity = "0";
     arrowIconLeft.style.opacity = "0";
-  } else {
-    textAreaImg.classList.add("img-disable");
-  }
+  } 
 });
