@@ -111,7 +111,8 @@ body {
 .encrypt {
   margin-top: 6rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 3rem;
   border-radius: 10px;
 }
 #encrypt-input-area {
@@ -196,9 +197,20 @@ body {
   background-color: #fff;
   color: #464866;
 }
-.right-arrow {
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#right-arrow {
   stroke: #ed7866c9;
   width: 3.125rem;
+  opacity: 0;
+}
+#left-arrow {
+  width: 3.125rem;
+  stroke: #ed7866c9;
+  opacity: 0;
 }
 .footer {
   margin: 3rem auto;
