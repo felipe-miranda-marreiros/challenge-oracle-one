@@ -20,6 +20,11 @@ textarea {
   color: #fff;
   font-size: 1rem;
 }
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #464866;
+}
 body {
   background-image: url(./img/wave-background.svg);
   background-color: #464866;
@@ -42,6 +47,9 @@ body {
   border-radius: 10px;
   padding: 0.7rem 3rem;
   margin-top: 3rem;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
 }
 .navbar-item {
   background-color: #fff;
