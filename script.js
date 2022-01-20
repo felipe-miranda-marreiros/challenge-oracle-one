@@ -13,7 +13,7 @@ btnEncrypt[0].addEventListener("click", (event) => {
     textToEncrypt[0].style.border = "5px solid red";
   } else {
     textToEncrypt[1].value = firstInput;
-    textToEncrypt[0].value = " ";
+    textToEncrypt[0].value = "";
     textAreaImg.classList.add("img-disable");
     arrowIconRight.style.stroke = "#34C06B";
     arrowIconRight.style.transition = "all 0.5s";
@@ -30,7 +30,7 @@ btnEncrypt[1].addEventListener("click", (event) => {
     textToEncrypt[1].style.border = "3px solid red";
   } else {
     textToEncrypt[0].value = secondInput;
-    textToEncrypt[1].value = " ";
+    textToEncrypt[1].value = "";
     textAreaImg.classList.remove("img-disable");
     arrowIconLeft.style.stroke = "#34C06B";
     arrowIconLeft.style.transition = "all 0.5s";
