@@ -42,6 +42,14 @@ body {
   max-width: 82.25rem;
   margin: auto;
 }
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+.fa-bars:hover {
+  transition: all 0.5s;
+  color: #ed7966;
+}
 .navbar {
   background-color: #464866;
   border-radius: 10px;
@@ -52,6 +60,7 @@ body {
   top: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 .navbar-item {
   background-color: #fff;
@@ -290,5 +299,34 @@ i {
 @media screen and (max-width: 22.5em) {
   .btn-cript-output {
     padding: 0.8rem 3rem;
+  }
+}
+@media screen and (max-width: 49.875em) {
+  .navbar {
+    position: relative;
+    overflow: inherit;
+    transition: all 0.5s;
+    position: sticky;
+    width: 90%;
+  }
+  .list-reset {
+    top: 80%;
+    right: 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #464866;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+  }
+  .list-reset.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
   }
 }
