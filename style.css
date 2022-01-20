@@ -112,7 +112,6 @@ body {
   display: block;
   width: 400px;
   justify-self: center;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   border-radius: 7px;
 }
 .encrypt {
