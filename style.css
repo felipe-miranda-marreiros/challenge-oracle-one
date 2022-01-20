@@ -14,6 +14,12 @@ button {
   font-family: inherit;
   font-size: inherit;
 }
+input,
+select,
+textarea {
+  color: #fff;
+  font-size: 1rem;
+}
 body {
   background-image: url(./img/wave-background.svg);
   background-color: #464866;
@@ -25,11 +31,11 @@ body {
   font-size: 0.875rem;
   font-family: "Karla", sans-serif;
   min-height: 100vh;
+  padding: 2rem;
 }
 .container {
   max-width: 82.25rem;
   margin: auto;
-  overflow: hidden;
 }
 .navbar {
   background-color: #464866;
@@ -61,6 +67,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 10px;
+  overflow: hidden;
 }
 .intro-first-part {
   background-color: #464866;
@@ -111,9 +118,10 @@ body {
 .encrypt {
   margin-top: 6rem;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 3rem;
-  border-radius: 10px;
 }
 #encrypt-input-area {
   background-color: #ed7966;
@@ -121,7 +129,7 @@ body {
   border-radius: 10px;
   width: 365px;
   height: 489px;
-  padding: 2rem;
+  padding: 3rem;
   padding-bottom: 5rem;
   justify-self: center;
   resize: none;
@@ -134,9 +142,9 @@ body {
   background-color: #ed7966;
   border: none;
   border-radius: 10px;
-  width: 365px;
-  height: 582px;
-  padding: 2rem;
+  width: 22.81rem;
+  height: 36.975rem;
+  padding: 3rem;
   padding-bottom: 7rem;
   background-size: 65%;
   background-repeat: no-repeat;
@@ -256,12 +264,16 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
   }
   .right-arrow {
     margin: 2rem;
   }
   .btn-cript-input {
     transform: translate(-50%, 100%);
+  }
+  .icons {
+    display: none;
   }
 }
 @media screen and (max-width: 22.5em) {
