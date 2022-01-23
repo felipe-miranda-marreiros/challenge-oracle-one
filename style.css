@@ -75,6 +75,9 @@ body {
   background-color: #ed7966;
   color: #fff;
 }
+.navbar-item:last-child:hover {
+  outline: #fff 2px solid;
+}
 .list-reset {
   list-style: none;
   display: flex;
