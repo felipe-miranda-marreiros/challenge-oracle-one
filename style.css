@@ -232,20 +232,35 @@ body {
   background-color: #fff;
   color: #464866;
 }
+.warning {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  transition: all 0.5s;
+  font-weight: 700;
+  z-index: 1;
+  color: #464866;
+}
+.error-el-2 {
+  top: 79%;
+  left: 15%;
+}
 .icons {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 #right-arrow {
-  stroke: #ed7866c9;
+  stroke: #34c06b;
   width: 3.125rem;
   opacity: 0;
+  transition: all 0.5s;
 }
 #left-arrow {
   width: 3.125rem;
-  stroke: #ed7866c9;
+  stroke: #34c06b;
   opacity: 0;
+  transition: all 0.5s;
 }
 .footer {
   margin: 3rem auto;
