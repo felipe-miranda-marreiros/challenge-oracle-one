@@ -17,7 +17,7 @@ const errorDecrypt = document.querySelector(".error-el-2");
 //validar
 
 const isValid = function (valueToCheck) {
-  const pattern = /^[a-z]+$/g;
+  const pattern = /^[a-z ,.!?;:()]+$/g;
   const currentValue = valueToCheck.value;
   const valid = pattern.test(currentValue);
 
